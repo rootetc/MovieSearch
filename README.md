@@ -36,4 +36,5 @@ Chained hash table을 활용하기 위하여 linked list를 활용하여 중복 
 
 비교이미지의 평균 픽셀값들을 사용하여 hash table의 row, col index에 접근
 
-해당 id를 사용하여 이미지 count buffer에 접근 후 count 증가
+해당 id를 사용하여 이미지 count buffer에 접근 후 count 증가 
+https://www.youtube.com/watch?v=u1wNeNH-i0I&feature=youtu.be  
