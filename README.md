@@ -21,7 +21,7 @@ ffmpeg -ss 00:00:15 -i video.mp4 -vf scale=800:-1 -vframes 1 image.jpg
 ffmpeg를 분할 후 분할 된 이미지는 순차적으로 최대 5섯 자리 수를 가지도록 00000부터 99999까지 나타나도록 설정하였기 때문에 해당 되는 파일의 번호를 사용하면 영상에서 나타나는 시간을 알 수 있기 때문에 2열에 이미지가 해당되는 번호를 저장.  
 3열부터 102열 까지는 이미지들이 가지는 고유 100개의 pixel 평균값을 cstring 형태로 저장. 
 
-### Make chained hash table
+### MAKE CHAINED HASH TABLE
 ![graph3](https://cloud.githubusercontent.com/assets/19329620/16171462/633390f2-35aa-11e6-8f83-0c042630311a.png)
 
 Chained hash table을 활용하기 위하여 linked list를 활용하여 중복 발생시 256 by 100의 배열에 깊이로 나타날 수 있도록 설계 
@@ -32,10 +32,11 @@ Chained hash table을 활용하기 위하여 linked list를 활용하여 중복 
 
 행과 열이 설정되면 Hash_table에는 N by 103에 저장된 이미지의 번호가 저장되도록 설정
 
-### Search
+### SEARCH
 
 비교이미지의 평균 픽셀값들을 사용하여 hash table의 row, col index에 접근
 
 해당 id를 사용하여 이미지 count buffer에 접근 후 count 증가 
 
+## RESULT
 https://www.youtube.com/watch?v=u1wNeNH-i0I&feature=youtu.be  
